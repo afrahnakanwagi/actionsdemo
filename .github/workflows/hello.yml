@@ -1,7 +1,7 @@
 name: First Workflow
 on: push
 jobs:
-  my-jobs:
+  my-job:
     runs-on: ubuntu-latest
     steps:
       - name: first-step
