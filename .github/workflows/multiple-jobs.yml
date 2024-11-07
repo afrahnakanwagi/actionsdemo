@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -name: Run many Testrs
-        run:
+        run: |
           pwd
           ls
           echo"Hello Class"
