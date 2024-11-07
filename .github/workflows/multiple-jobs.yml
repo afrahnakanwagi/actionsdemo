@@ -4,23 +4,23 @@ jobs:
   build_job:
     runs-on: ubuntu-latest
     steps:
-      -name: Run many Testrs
+      - name: Run many Steps
         run: |
           pwd
           ls
-          echo"Hello Class"
+          echo "Hello Class"
 
   test_job:
     needs: build_job
     runs-on: ubuntu-latest
     steps:
-      -name: Run Tests
-        run: echo"Running Tests"
+      - name: Run Tests
+        run: echo "Running Tests"
 
-   deploy_job:
+  deploy_job:
     needs: test_job
     runs-on: ubuntu-latest
     steps:
-      -name: Run Tests
-        run: echo"Deploying..."
+      - name: Run Tests
+        run: echo "Deploying"
         
